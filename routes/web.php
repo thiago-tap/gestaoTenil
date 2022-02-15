@@ -18,4 +18,4 @@ use App\Http\Controllers\AngularController;
     return view('welcome');
 });*/
 
-Route::any('/{any}', [AngularController::class, "AngularController@index"])->where('any', '^(?!api).*$');
+Route::any('/{any}', [AngularController::class, 'index'])->where('any', '^(?!api).*$');
